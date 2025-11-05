@@ -5,7 +5,7 @@ color: #333;
 }
 
 .fale-conosco {
-margin-top: -150px;
+margin-top: -80px;
 min-height: 100vh;
 }
 
@@ -72,7 +72,7 @@ font-size: 0.9rem;
 }
 
 .cards-container {
-    margin-top: 145px !important; 
+margin-top: 145px !important; 
 }
 
 
@@ -151,25 +151,29 @@ transition: all 0.3s ease;
 }
 
 .social-icons a:hover {
-transform: scale(1.25);
-color: #ffffff;
-text-shadow: 0 0 8px rgba(255, 255, 255, 0.895); 
+    transform: scale(1.25);
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.895); 
 }
 
 .footer-bottom {
-border-top: 1px solid rgba(255, 255, 255, 0.5);
-margin-top: 30px;
-padding-top: 15px;
-text-align: center;
-font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    margin-top: 30px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.Nave {
+    margin-left: -80px;
 }
 
 .logo-footer {
-text-align: left;
-margin-left: -180px;
-margin-top: -5%;
+    text-align: left;
+    margin-left: -100px;
+    margin-top: -2%;
 }
 
 .logo-footer img {
-width: 313px;
+    width: 313px;
 }
