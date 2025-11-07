@@ -1,101 +1,101 @@
 body {
-background: linear-gradient(135deg, #90c940 0%, #006330 71%);
-font-family: "Poppins", sans-serif;
-color: #333;
+  background: linear-gradient(135deg, #90c940 0%, #006330 71%);
+  font-family: "Poppins", sans-serif;
+  color: #333;
 }
 
 .fale-conosco {
-margin-top: -80px;
-min-height: 100vh;
+  margin-top: -80px;
+  min-height: 100vh;
 }
 
 
 .accordion-item {
-background: white;
-border-radius: 10px;
-margin-bottom: 10px;
-border: none;
-box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: none;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 
 .accordion-button {
-border-radius: 10px;
-font-weight: 500;
-color: #333;
+  border-radius: 10px;
+  font-weight: 500;
+  color: #333;
 }
 
 .accordion-button:not(.collapsed) {
-color: #006330;
-background-color: #e9f5e9;
-box-shadow: none;
+  color: #006330;
+  background-color: #e9f5e9;
+  box-shadow: none;
 }
 
 .accordion-button::after {
-filter: invert(42%) sepia(91%) saturate(2776%) hue-rotate(98deg) brightness(80%) contrast(120%);
+  filter: invert(42%) sepia(91%) saturate(2776%) hue-rotate(98deg) brightness(80%) contrast(120%);
 }
 
 /* Cards */
 .botao-card {
-border: none;
-border-radius: 15px;
-color: white;
-transition: transform 0.2s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-padding: 1.5rem 1rem;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  transition: transform 0.2s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  padding: 1.5rem 1rem;
 }
 
 .card-agricultor {
-background-color: #006330;
+  background-color: #006330;
 }
 
 .card-comunidade {
-background-color: #006330;
+  background-color: #006330;
 }
 
 .botao-card:hover {
-transform: scale(1.05);
-box-shadow: 0 6px 15px rgba(0,0,0,0.25);
-background-color: #3f8d2e;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  background-color: #3f8d2e;
 }
 
 .botao-card i {
-color: white;
-transition: transform 0.2s ease;
+  color: white;
+  transition: transform 0.2s ease;
 }
 
 .botao-card:hover i {
-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 p {
 margin: 0;
-font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 
 .cards-container {
-margin-top: 145px !important; 
+  margin-top: 145px !important; 
 }
 
 /* RODAPÉ */
 body {
-margin: 0;
-padding: 0;
-overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 html, body {
-height: 100%;
-margin: 0;
-padding: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-display: flex;
-flex-direction: column;
-min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
-flex: 1; 
+  flex: 1; 
 }
 
 .footer-bg {
