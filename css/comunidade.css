@@ -1,0 +1,61 @@
+:root {
+  --verde-principal: #006330;
+  --verde-claro: #90c940;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.main-bg {
+  background: linear-gradient(174deg, #c3ffd9 15%, #e9f2eb 90%);
+}
+
+.footer-bg {
+  background: linear-gradient(
+    to right,
+    rgba(196, 196, 196, 1) 0%,
+    rgba(170, 199, 130, 1) 39%,
+    rgba(157, 200, 97, 1) 65%,
+    rgba(144, 201, 64, 1) 100%
+  );
+}
+
+.footer-logo {
+  max-width: 220px;
+  height: auto;  
+  margin-top: -27px; 
+}
+
+footer a:hover {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+footer .bi {
+  transition: transform 0.2s ease, text-shadow 0.2s ease;
+}
+
+footer .bi:hover {
+  transform: scale(1.2);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+     .footer-logo {
+    max-width: 180px;
+    height: auto;
+  }
+
+  
+}
