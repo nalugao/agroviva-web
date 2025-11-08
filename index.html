@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AgroViva Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Topbar -->
+  <header class="topbar" role="banner">
+  <div class="container nav">
+
+    <a class="brand" href="#">
+      <img src="img/Logo_AgroViva1.PNG" class="brand__logo" alt="Logo AgroViva Web">
+      <span class="brand__name">AgroViva Web</span>
+    </a>
+      <nav class="menu" aria-label="Navegação principal">
+        <a href="#inicio" class="active">Início</a>
+        <a href="#missao">Apresentação</a>
+        <a href="#agricultores">Agricultores</a>
+        <a href="#comunidade">Comunidade</a>
+        <a href="#contato">Fale Conosco</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="inicio" class="hero" role="region" aria-label="Chamada principal">
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="container hero__content">
+      <h1>Um elo entre quem produz e quem precisa</h1>
+      <p class="subtitle">Plataforma que une agricultores e comunidades, promovendo consumo consciente e produtos frescos direto da fonte.</p>
+      <div class="actions">
+        <a class="btn btn--primary" href="#cadastro" role="button" aria-label="Cadastre-se agora">CADASTRE-SE AGORA</a>
+        <a class="btn btn--ghost" href="#cards" role="button">SAIBA MAIS</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cards -->
+  <section id="cards" class="cards container" aria-label="Seções principais">
+    <article class="card" id="missao">
+      <div class="card__icon" aria-hidden="true">
+          <img src="img/missao.png" alt="Ícone da missão">
+      </div>
+      <h3>Nossa Missão</h3>
+      <p>Cultivamos propósito e impacto. Acreditamos que cada alimento pode transformar vidas e aproximar pessoas.</p>
+      <a href="#" class="card__link" aria-label="Saiba mais sobre nossa missão">SAIBA MAIS</a>
+    </article>
+
+    <article class="card" id="agricultores">
+  <div class="card__icon">
+    <img src="img/agricultor.png" alt="Ícone Agricultor">
+  </div>
+  <h3>Para o Agricultor</h3>
+  <p>Plante, compartilhe e cresça com a gente. A AgroViva Web é o seu espaço para prosperar de forma colaborativa.</p>
+  <a href="#" class="card__link">SAIBA MAIS</a>
+</article>
+
+
+    <article class="card" id="comunidade">
+      <div class="card__icon" aria-hidden="true">
+        <img src="img/comunidade.png" alt="Ícone da comunidade">
+      </div>
+      <h3>Para a Comunidade</h3>
+      <p>Mais do que consumo, é parceria. Apoie famílias agricultoras e ajude a cultivar um futuro mais humano e sustentável.</p>
+      <a href="#" class="card__link" aria-label="Saiba mais para a comunidade">SAIBA MAIS</a>
+    </article>
+  </section>
+
+  <footer id="contato" class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <small>© AgroViva Web • 2025</small>
+      <nav class="footer__links" aria-label="Links do rodapé">
+        <a href="#">Termos</a>
+        <a href="#">Privacidade</a>
+        <a href="mailto:contato@agroviva.example">Contato</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
