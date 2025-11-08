@@ -20,9 +20,10 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./css/apresentacao.css" />
+    <link rel="stylesheet" href="./css/fale.css">
   </head>
   <body>
-    <div class="container-fluid main-container px-0">
+    <div class="container-fluid main-container p-0">
       <div class="row g-0">
         <div class="col-12">
           <div class="header">
@@ -63,11 +64,15 @@
                   </li>
                 </ul>
 
-                <div class="col-12 col-md-6 col-lg-4 order-md-2 order-lg-3">
                   <div class="botoes_cadastro_container">
-                    <button class="cadastro-button">Cadastre-se</button>
+                    <button class="cadastro-button">
+                      <i
+                        class="bi bi-person-plus-fill"
+                        style="margin-right: 8px"
+                      ></i>
+                      Cadastre-se Agora
+                    </button>
                   </div>
-                </div>
               </div>
             </div>
 
@@ -130,5 +135,66 @@
         </div>
       </div>
     </div>
+
+    <footer class="footer-bg text-white mt-auto py-5">
+      <section class="container text-center mb-4">
+        <h3 class="fw-bold">Fique por dentro das nossas redes!</h3>
+        <div class="d-flex justify-content-center gap-4 mt-3 fs-3">
+          <a href="https://x.com/" class="text-white"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://www.instagram.com/" class="text-white"><i class="bi bi-instagram"></i></a>
+          <a href="https://pt-br.facebook.com/" class="text-white"><i class="bi bi-facebook"></i></a>
+        </div>
+        <hr class="my-4 mx-auto opacity-75" style="width:60%;">
+      </section>
+
+      <section class="container">
+        <div class="row gy-4 text-center text-md-start">
+
+          <div class="col-md-3 d-flex flex-column align-items-center align-items-md-start">
+            <img src="img/logo.png" alt="Logotipo AgroViva Web" class="footer-logo mb-2">
+          </div>
+
+          <nav class="col-md-3" aria-label="Navegação do rodapé">
+            <h3 class="h5 fw-bold">Navegação</h3>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Impacto social</a></li>            
+              <li><a href="Agricultor.html" class="text-white text-decoration-none">Benefícios - Agricultor</a></li>
+              <li><a href="FaleConosco.html" class="text-white text-decoration-none">Fale conosco</a></li>
+            </ul>
+          </nav>
+
+          <section class="col-md-3">
+            <h3 class="h5 fw-bold">Serviços</h3>
+            <ul class="list-unstyled">
+              <li>Agricultores</li>
+              <li>Alertas Climáticos (INMET)</li>
+              <li>Venda e Oferta Local</li>
+              <li>Mapa de Distribuição de Alimentos</li>
+              <li>Acesso a Alimentos Frescos</li>
+            </ul>
+          </section>
+
+          <section class="col-md-3">
+            <h3 class="h5 fw-bold">Contato</h3>
+            <ul class="list-unstyled">
+              <li>FAQ</li>
+              <li><a href="mailto:AgroViva@gmail.com" class="text-white text-decoration-none">AgroViva@gmail.com</a></li>
+              <li><a href="tel:+5511947334726" class="text-white text-decoration-none">+55 11 94733-4726</a></li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="border-top mt-4 pt-3 text-center small opacity-75">
+          © 2025 <strong>AgroVivaWeb</strong>. Todos os direitos reservados. |
+          <a href="#" class="text-white text-decoration-none">Política de Privacidade</a> |
+          <a href="#" class="text-white text-decoration-none">Termos de Uso</a>
+        </div>
+      </section>
+    </footer>
+
   </body>
+
+  
+
 </html>
