@@ -17,11 +17,10 @@ body {
 }
 
 .header {
-  background-image: url("./src/homem_campo.png");
+  background-image: url("/agroviva-web/img/homem_campo.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
   color: white;
   padding: 3rem 2.5rem;
   min-height: 350px;
