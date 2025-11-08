@@ -180,15 +180,69 @@ body{
 }
 .card__link:hover{border-color:#c9d5df}
 
-/* Footer */
-.footer{border-top:1px solid #e6ebf0; background:#fff}
-.footer__inner{
-  display:flex; align-items:center; justify-content:space-between;
-  padding:26px 0;
+/* RODAPÉ */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
-.footer__links{display:flex; gap:18px}
-.footer__links a{color:#2b3137; text-decoration:none}
-.footer__links a:hover{text-decoration:underline}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; 
+}
+
+.footer-bg {
+  background: linear-gradient(
+    to right,
+    rgba(196, 196, 196, 1) 0%,
+    rgba(170, 199, 130, 1) 39%,
+    rgba(157, 200, 97, 1) 65%,
+    rgba(144, 201, 64, 1) 100%
+  );
+}
+
+.footer-logo {
+  max-width: 220px;
+  height: auto;  
+  margin-top: -27px; 
+}
+
+footer a:hover {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+footer .bi {
+  transition: transform 0.2s ease, text-shadow 0.2s ease;
+}
+
+footer .bi:hover {
+  transform: scale(1.2);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .footer-logo {
+    max-width: 180px;
+    height: auto;
+  }
+}
 
 /* Responsivo */
 @media (max-width: 980px){
