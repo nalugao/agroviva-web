@@ -4,12 +4,6 @@ body {
   color: #333;
 }
 
-/* Helpers */
-.container{
-  width:min(1120px, 92vw);
-  margin-inline:auto;
-}
-
 /* Topbar */
 .topbar{
   position:sticky;
@@ -185,4 +179,69 @@ footer .bi:hover {
     max-width: 180px;
     height: auto;
   }
+}
+
+.agri .agri-wrap{
+  display:flex; flex-wrap:wrap; gap:32px;
+  width:min(1120px,92vw); margin:24px auto;
+}
+
+/* ESQUERDA */
+.agri .agri-left{ flex:1 1 520px; min-width:320px; text-align:center; }
+.agri .photo{ position:relative; margin:0 auto 26px; width:100%; max-width:640px; }
+.agri .photo img{ width:100%; height:auto; display:block; border-radius:18px; }
+
+/* badge sobreposta */
+.agri .badge-tag{
+  position:absolute; left:50%; bottom:-14px; transform:translateX(-50%);
+  display:inline-flex; align-items:center; gap:8px;
+  background:rgba(4,93,21,.15);
+  border:1px solid #cfe5d7; color:#0f2f19;
+  padding:8px 14px; border-radius:999px; font-weight:700; font-size:14px;
+  backdrop-filter: blur(1px);
+}
+.agri .badge-tag img{ width:18px; height:18px; object-fit:contain; }
+
+.agri .subtitle{
+  max-width:560px; margin:22px auto 0; line-height:1.35; font-size:1.2rem;
+}
+
+/* DIREITA: painel verde */
+.agri .agri-right{
+  flex:1 1 420px; min-width:320px;
+  background:#145c2a; color:#fff;
+  padding:28px 22px 34px;
+  border-radius: 0 0 0 20px;
+  position:relative;
+}
+.agri .agri-right .logo{
+  position:absolute; top:18px; right:18px; width:56px; height:auto;
+}
+.agri .agri-right h2{
+  text-align:center; font-weight:800; font-size:22px; margin:14px 0 18px;
+}
+
+/* lista de benefícios */
+.agri .benefits{ display:flex; flex-direction:column; gap:18px; }
+
+.agri .benefit{
+  display:flex; align-items:center; gap:14px;
+  background:#e9ecef; color:#0b1220;
+  border:1px solid #d0d7de;
+  border-radius:16px; padding:14px 16px;
+}
+.agri .benefit-icon{
+  flex:0 0 52px; height:52px; border-radius:12px;
+  display:grid; place-items:center;
+  background:#f3f6f8; border:1px solid #d6dbe0;
+}
+.agri .benefit-icon img{ width:28px; height:28px; object-fit:contain; }
+
+.agri .benefit-text h3{ margin:0 0 4px; font-size:18px; font-weight:800; }
+.agri .benefit-text p{ margin:0; font-size:13px; line-height:1.35; color:#334155; }
+
+/* responsivo */
+@media (max-width:980px){
+  .agri .agri-wrap{ flex-direction:column; }
+  .agri .agri-right{ border-radius:12px; }
 }

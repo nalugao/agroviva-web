@@ -1,155 +1,174 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Arial", sans-serif;
+    :root{ --primary:#1B7F4A; }
+    html, body { height: 100%; }
+    body{
+      margin:0; display:flex; flex-direction:column; min-height:100vh;
+      font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,Helvetica,sans-serif;
+    }
+    main#conteudo{ flex:1 0 auto; }
+
+    /* Topbar */
+    .topbar{
+      position: sticky; top: 0; z-index: 1000;
+      background:#fff; border-bottom:1px solid #e6ebf0;
+      box-shadow:0 2px 10px rgba(0,0,0,.04);
+    }
+    .topbar .nav{
+      display:flex; align-items:center; justify-content:space-between; padding:14px 0;
+    }
+    .brand{ display:flex; align-items:center; gap:10px; text-decoration:none; color:inherit; font-weight:800; }
+    .brand__logo{ width:34px; height:34px; object-fit:contain; }
+    .menu{ display:flex; gap:22px; }
+    .menu a{ text-decoration:none; color:#141a1f; font-weight:600; font-size:14px; }
+    .menu a:hover, .menu a.active{ color:var(--primary); }
+    .menu-toggle{ display:none; background:none; border:none; font-size:22px; }
+
+    @media (max-width: 980px){
+      .menu{ display:none; }
+      .menu-toggle{ display:block; }
+    }
+
+    /* Cards simples da seção de benefícios */
+    .card h3{ margin-bottom:.25rem; font-weight:800; }
+    .subtitle{ line-height:1.3; }
+
+    .footer-bg {
+  background: linear-gradient(
+    to right,
+    rgba(196, 196, 196, 1) 0%,
+    rgba(170, 199, 130, 1) 39%,
+    rgba(157, 200, 97, 1) 65%,
+    rgba(144, 201, 64, 1) 100%
+  );
 }
 
-body {
-  background-color: #ffffff;
+.footer-logo {
+  max-width: 220px;
+  height: auto;  
+  margin-top: -27px; 
 }
 
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  min-height: 100vh;
-  gap: 40px; 
+footer a:hover {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
 
-.left {
-  flex: 1;
-  min-width: 320px;
-  text-align: center;
-  padding: 20px;
+footer .bi {
+  transition: transform 0.2s ease, text-shadow 0.2s ease;
 }
 
-.coisa{ 
-margin-top: 35px;
+footer .bi:hover {
+  transform: scale(1.2);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
-.img {
-  margin-left: 17px ;
-  margin-top: 25px;
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
+  
+.agri { background:#fff; }
+
+/* Layout principal (substitui o antigo .container) */
+.agri .agri-wrap{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:flex-start;
+  gap:40px;
+  width:min(1120px,92vw);
+  margin: 28px auto;
 }
 
-.tag {
-    display: inline-flex;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-    border-radius: 20px;
-    border: 1px solid #D1D1D1;
-    padding: 6px 12px;
-    margin-bottom: 15px;
-    background: transparent;
-    color: black;
-    font-size: 14px;
-    font-weight: bold;
+/* Coluna esquerda (substitui .left) */
+.agri .agri-left{
+  flex:1 1 360px;
+  min-width:320px;
+  padding:20px;
+  text-align:center;
+}
+.agri .agri-img{
+  max-width:100%;
+  height:auto;
+  display:block;
+  margin: 25px auto 0;
 }
 
-.tag::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: #045D15;
-    opacity: 0.5;
-    border-radius: inherit;
-    z-index: -1;
+/* Etiqueta “tag” */
+.agri .tag{
+  display:inline-flex;
+  align-items:center;
+  position:relative;
+  border-radius:20px;
+  border:1px solid #D1D1D1;
+  padding:6px 12px;
+  margin: 15px 0;
+  background:transparent;
+  color:#000;
+  font-size:14px;
+  font-weight:700;
 }
-
-.tag img {
-    width: 20px;
-    height: 20px;
-    margin-right: 6px;
+.agri .tag::before{
+  content:"";
+  position:absolute; inset:0;
+  background:#045D15; opacity:.5; border-radius:inherit; z-index:-1;
 }
+.agri .tag img{ width:20px; height:20px; margin-right:6px; display:block; }
 
-.subtitle {
-  margin-top: 20px;
+/* Subtítulo */
+.agri .subtitle{
+  margin-top: 12px;
   font-size: 1.2rem;
 }
 
-.right {
-  flex: 1;
-  min-width: 320px;
-  background-color: #145c2a;
-  color: #fff;
-  padding: 40px 60px; 
+/* Coluna direita (substitui .right) */
+.agri .agri-right{
+  flex:1 1 440px;
+  min-width:320px;
+  background-color:#145c2a;
+  color:#fff;
+  padding: 32px 28px 40px;
   border-radius: 0 0 0 20px;
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; 
+  position:relative;
+  /* REMOVIDO min-height:100vh pra não sobrepor footer */
 }
 
-.logo {
-  width: 85px;
-  position: absolute;
-  top: 25px;
-  right: 25px;
+.agri .logo{
+  width:85px;
+  position:absolute;
+  top:25px; right:25px;
 }
 
-h2 {
-  text-align: center;
-  margin: 70px 0 30px 0; 
-  font-size: 1.3rem;
+/* Títulos dentro da coluna direita */
+.agri h2{
+  text-align:center;
+  margin: 70px 0 24px 0;
+  font-size:1.3rem;
 }
 
-.card {
-  display: flex;
-  align-items: flex-start;
-  background-color: #f2f2f2;
-  color: #000;
-  padding: 15px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  gap: 15px;
+/* Card interno (substitui .card) */
+.agri .agri-card{
+  display:flex;
+  align-items:flex-start;
+  background:#f2f2f2;
+  color:#000;
+  padding:15px;
+  border-radius:10px;
+  margin-bottom:20px;
+  gap:15px;
 }
-.card img[alt="Ícone clima"] {
-  width: 60px;
-  height: auto;
+.agri .agri-card img{
+  width:40px; height:40px; object-fit:contain; flex-shrink:0;
 }
-.card h3 {
-  font-size: 1rem;
-  margin-bottom: 5px;
+.agri .agri-card h3{
+  font-size:1rem; margin:0 0 6px 0;
 }
-
-.card p {
-  font-size: 0.9rem;
-  line-height: 1.3;
+.agri .agri-card p{
+  font-size:.9rem; line-height:1.35; margin:0;
 }
 
-.icon {
-  width: 40px;
-  height: 40px;
-  flex-shrink: 0;
-}
-
-/* ----- RESPONSIVO ----- */
-@media (max-width: 900px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .right {
-    border-radius: 0;
-    width: 100%;
-  }
-
-  .logo {
-    position: static;
-    display: block;
-    margin: 0 auto 15px;
-  }
-
-  h2 {
-    margin-top: 10px;
-  }
+/* Responsivo */
+@media (max-width: 900px){
+  .agri .agri-wrap{ flex-direction:column; gap:24px; }
+  .agri .agri-right{ border-radius:0; }
+  .agri .logo{ position:static; display:block; margin:0 0 12px auto; }
+  .agri h2{ margin-top:10px; } 
 }
