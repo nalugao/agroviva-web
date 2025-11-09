@@ -64,7 +64,9 @@ body{
   font-weight:600;
   font-size:14px;
 }
-.menu a.active{color:var(--primary)}
+.menu a.active {
+  color: #90c940;
+}
 .menu a:hover{opacity:.85}
 .menu-toggle{display:none}
 
