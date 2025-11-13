@@ -11,6 +11,11 @@ body {
   min-height: 100vh;
 }
 
+#userwayAccessibilityIcon {
+  margin-top: 250px !important; /* ajusta a posição vertical do ícone */
+  z-index: 9999 !important;   /* garante que o botão fique acima de outros elementos */
+}
+
 .topbar {
   position: sticky;
   top: 0;
@@ -222,6 +227,7 @@ body {
   background-size: 200% 200%;
   animation: gradient-shift 3s ease infinite;
   border: none;
+  text-decoration: none;
   padding: 1.25rem 3rem;
   font-size: clamp(1rem, 2vw, 1.15rem);
   font-weight: 700;

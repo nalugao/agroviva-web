@@ -20,6 +20,11 @@ body{
   line-height:1.55;
 }
 
+#userwayAccessibilityIcon {
+  margin-top: 250px !important;
+  z-index: 9999 !important;
+}
+
 /* Helpers */
 .container{
   width:min(1120px, 92vw);
