@@ -25,23 +25,39 @@
   <body>
 
             <!-- Topbar -->
-  <header class="topbar" role="banner">
-  <div class="container nav">
-
-    <a class="brand" href="#">
-      <img src="img/Logo_AgroViva1.PNG" class="brand__logo" alt="Logo AgroViva Web">
-      <span class="brand__name">AgroViva Web</span>
-    </a>
-      <nav class="menu" aria-label="Navegação principal">
-        <a href="/agroviva-web/Home.html">Início</a>
-        <a href="/agroviva-web/Apresentacao.html" class="active">Impacto Social</a>
-        <a href="/agroviva-web/agricultor.html">Agricultor</a>
-        <a href="/agroviva-web/Comunidade.html">Comunidade</a>
-        <a href="/agroviva-web/FaleConosco.html">Fale Conosco</a>
-      </nav>
-      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+<header class="topbar">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="img/Logo_AgroViva1.PNG" alt="Logo AgroViva Web" class="brand__logo me-2" style="width: 34px; height: 34px; border-radius: 8px;">
+        <span class="fw-bold text-success">AgroViva Web</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-lg-center gap-lg-3">
+          <li class="nav-item">
+            <a class="nav-link" href="/agroviva-web/Home.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-success fw-bold" href="/agroviva-web/Apresentacao.html">Impacto Social</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/agroviva-web/agricultor.html">Agricultor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/agroviva-web/Comunidade.html">Comunidade</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/agroviva-web/FaleConosco.html">Fale Conosco</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </header>
+  </nav>
+</header>
 
     <div class="container-fluid main-container p-0">
       <div class="row g-0">
@@ -201,8 +217,8 @@
             <h3 class="h5 fw-bold">Contato</h3>
             <ul class="list-unstyled">
               <li>FAQ</li>
-              <li><a href="mailto:AgroViva@gmail.com" class="text-white text-decoration-none">AgroViva@gmail.com</a></li>
-              <li><a href="tel:+5511947334726" class="text-white text-decoration-none">+55 11 94733-4726</a></li>
+              <li>AgroViva@gmail.com</li>
+              <li>+55 11 94733-4726</li>
             </ul>
           </section>
         </div>

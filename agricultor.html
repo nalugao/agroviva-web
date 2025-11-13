@@ -9,72 +9,106 @@
   <link rel="stylesheet" href="css/agricultor.css" />
 </head>
 <body>
-  <header class="topbar" role="banner">
-    <div class="container d-flex align-items-center justify-content-between py-2">
-
-      <a class="d-flex align-items-center text-decoration-none" href="/agroviva-web/Home.html">
-        <img src="/agroviva-web/img/Logo_AgroViva1.PNG" class="brand__logo me-2" alt="Logo AgroViva Web" style="width:34px;height:34px;object-fit:contain">
-        <span class="fw-bold text-dark">AgroViva Web</span>
+<header class="topbar">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="img/Logo_AgroViva1.PNG" alt="Logo AgroViva Web" class="brand__logo me-2" style="width: 34px; height: 34px; border-radius: 8px;">
+        <span class="fw-bold text-success">AgroViva Web</span>
       </a>
-      <nav class="menu" aria-label="Navegação principal">
-          <a href="/agroviva-web/Home.html">Início</a>
-          <a href="/agroviva-web/Apresentacao.html">Impacto Social</a>
-          <a href="/agroviva-web/agricultor.html" class="active">Agricultor</a>
-          <a href="/agroviva-web/Comunidade.html">Comunidade</a>
-          <a href="/agroviva-web/FaleConosco.html">Fale Conosco</a>
-</nav>
-      <button class="menu-toggle d-md-none btn btn-outline-secondary btn-sm" aria-label="Abrir menu">☰</button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-lg-center gap-lg-3">
+          <li class="nav-item">
+            <a class="nav-link" href="/agroviva-web/Home.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/agroviva-web/Apresentacao.html">Impacto Social</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-success fw-bold" href="/agroviva-web/agricultor.html">Agricultor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/agroviva-web/Comunidade.html">Comunidade</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/agroviva-web/FaleConosco.html">Fale Conosco</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </header>
+  </nav>
+</header>
 
-  <main id="conteudo">
-    <section class="agri">
-      <div class="agri-wrap">
-        <div class="agri-left">
-          <img src="/agroviva-web/img/548890 1.png" alt="Agricultores no campo" class="agri-img">
-          <div class="tag">
-            <img src="/agroviva-web/img/globo.png" alt="Ícone globo">
-            <span class="verde">Agricultor mais conectado</span>
+<main id="conteudo">
+  <section class="agri py-5">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        
+        <!-- Coluna Esquerda -->
+        <div class="col-lg-6 text-center text-lg-start">
+          <img src="/agroviva-web/img/548890 1.png" alt="Agricultores no campo" class="img-fluid agri-img mb-4">
+          
+          <div class="tag d-flex align-items-center justify-content-center justify-content-lg-start gap-2 mb-3">
+            <img src="/agroviva-web/img/globo.png" alt="Ícone globo" class="tag-icon">
+            <span class="verde fw-semibold">Agricultor mais conectado</span>
           </div>
           <p class="subtitle">
             Do clima à feira: tudo que o agricultor precisa para crescer
           </p>
         </div>
-        <div class="agri-right">
-          <img src="/agroviva-web/img/logobranco.png" alt="AgroViva Web" class="logo">
-          <h2>O que o agricultor ganha ao se cadastrar</h2>
-          <div class="agri-card">
-            <img src="/agroviva-web/img/nuvem.png" alt="Ícone clima">
-            <div>
-              <h3>Acesso ao clima local</h3>
-              <p>Acompanhe alertas climáticos automaticamente.</p>
+
+        <!-- Coluna Direita -->
+        <div class="col-lg-6">
+          <div class="agri-right bg-success text-white p-4 rounded-4 shadow">
+            <div class="text-center mb-4">
+              <img src="/agroviva-web/img/logobranco.png" alt="AgroViva Web" class="logo mb-3" style="max-width: 120px;">
+              <h2 class="fw-bold fs-4">O que o agricultor ganha ao se cadastrar</h2>
             </div>
-          </div>
-          <div class="agri-card">
-            <img src="/agroviva-web/img/pc.png" alt="Ícone cadastro">
-            <div>
-              <h3>Cadastro de produtos fácil</h3>
-              <p>Em um clique ou por áudio, mesmo para quem tem pouca alfabetização.</p>
+
+            <!-- Cards -->
+            <div class="agri-card d-flex align-items-start gap-3 mb-3">
+              <img src="/agroviva-web/img/nuvem.png" alt="Ícone clima" width="48">
+              <div>
+                <h5 class="fw-semibold">Acesso ao clima local</h5>
+                <p class="mb-0">Acompanhe alertas climáticos automaticamente.</p>
+              </div>
             </div>
-          </div>
-          <div class="agri-card">
-            <img src="/agroviva-web/img/carrinho.png" alt="Ícone vendas">
-            <div>
-              <h3>Mais oportunidades de venda</h3>
-              <p>Venda excedentes para feiras e comunidades locais.</p>
+
+            <div class="agri-card d-flex align-items-start gap-3 mb-3">
+              <img src="/agroviva-web/img/pc.png" alt="Ícone cadastro" width="48">
+              <div>
+                <h5 class="fw-semibold">Cadastro de produtos fácil</h5>
+                <p class="mb-0">Em um clique ou por áudio, mesmo para quem tem pouca alfabetização.</p>
+              </div>
             </div>
-          </div>
-          <div class="agri-card">
-            <img src="/agroviva-web/img/planta.png" alt="Ícone plantio">
-            <div>
-              <h3>Orientações de plantio</h3>
-              <p>Boas práticas simples para melhorar o cultivo e produtividade.</p>
+
+            <div class="agri-card d-flex align-items-start gap-3 mb-3">
+              <img src="/agroviva-web/img/carrinho.png" alt="Ícone vendas" width="48">
+              <div>
+                <h5 class="fw-semibold">Mais oportunidades de venda</h5>
+                <p class="mb-0">Venda excedentes para feiras e comunidades locais.</p>
+              </div>
             </div>
+
+            <div class="agri-card d-flex align-items-start gap-3">
+              <img src="/agroviva-web/img/planta.png" alt="Ícone plantio" width="48">
+              <div>
+                <h5 class="fw-semibold">Orientações de plantio</h5>
+                <p class="mb-0">Boas práticas simples para melhorar o cultivo e produtividade.</p>
+              </div>
+            </div>
+
           </div>
         </div>
+
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+</main>
 
   <footer class="footer-bg text-white mt-auto py-5">
     <section class="container text-center mb-4">
@@ -119,9 +153,8 @@
         <section class="col-md-3">
           <h3 class="h5 fw-bold">Contato</h3>
           <ul class="list-unstyled m-0">
-            <li>FAQ</li>
-            <li><a href="mailto:AgroViva@gmail.com" class="text-white text-decoration-none">AgroViva@gmail.com</a></li>
-            <li><a href="tel:+5511947334726" class="text-white text-decoration-none">+55 11 94733-4726</a></li>
+              <li>AgroViva@gmail.com</li>
+              <li>+55 11 94733-4726</li>
           </ul>
         </section>
       </div>
@@ -134,7 +167,6 @@
     </section>
   </footer>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

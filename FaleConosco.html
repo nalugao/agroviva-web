@@ -13,23 +13,39 @@
 <main>
 
     <!-- Topbar -->
-  <header class="topbar" role="banner">
-  <div class="container nav">
-
-    <a class="brand" href="#">
-      <img src="img/Logo_AgroViva1.PNG" class="brand__logo" alt="Logo AgroViva Web">
-      <span class="brand__name">AgroViva Web</span>
-    </a>
-      <nav class="menu" aria-label="Navegação principal">
-        <a href="/agroviva-web/Home.html">Início</a>
-        <a href="/agroviva-web/Apresentacao.html">Impacto Social</a>
-        <a href="/agroviva-web/agricultor.html">Agricultor</a>
-        <a href="/agroviva-web/Comunidade.html">Comunidade</a>
-        <a href="/agroviva-web/FaleConosco.html" class="active">Fale Conosco</a>
-      </nav>
-      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+<header class="topbar">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="img/Logo_AgroViva1.PNG" alt="Logo AgroViva Web" class="brand__logo me-2" style="width: 34px; height: 34px; border-radius: 8px;">
+        <span class="fw-bold text-success">AgroViva Web</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-lg-center gap-lg-3">
+          <li class="nav-item">
+            <a class="nav-link" href="/agroviva-web/Home.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/agroviva-web/Apresentacao.html">Impacto Social</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/agroviva-web/agricultor.html">Agricultor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/agroviva-web/Comunidade.html">Comunidade</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-success fw-bold" href="/agroviva-web/FaleConosco.html">Fale Conosco</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </header>
+  </nav>
+</header>
 
 <section class="fale-conosco d-flex align-items-center">
     <div class="container py-5">
@@ -113,46 +129,56 @@
           </div>
         </div>
 
-        <!-- Coluna direita: Formulário figurativo -->
-        <div class="col-md-6 mt-5 mt-md-0 form">
-          <div class="card shadow p-4">
-            <h4 class="mb-4 text-success fw-bold">Entre em contato</h4>
+        <!-- Formulário figurativo -->
+<div class="col-md-6 mt-5 mt-md-0 form">
+  <div class="card shadow p-4">
+    <h4 class="mb-4 text-success fw-bold">Entre em contato</h4>
 
-            <form>
-              <div class="mb-3">
-                <label for="nome" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="nome" placeholder="Seu nome">
-              </div>
+    <form id="contatoForm" novalidate>
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome Completo</label>
+        <input type="text" class="form-control" id="nome" placeholder="Seu nome completo" required>
+        <div class="invalid-feedback">Digite seu nome completo (nome e sobrenome com pelo menos 2 letras cada).</div>
+      </div>
 
-              <div class="mb-3">
-                <label for="email" class="form-label">E-mail</label>
-                <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com">
-              </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">E-mail</label>
+        <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com" required>
+        <div class="invalid-feedback">Digite um e-mail válido (exemplo@dominio.com).</div>
+      </div>
 
-              <div class="mb-3">
-                <label for="telefone" class="form-label">Telefone</label>
-                <input type="tel" class="form-control" id="telefone" placeholder="(xx) xxxxx-xxxx">
-              </div>
+      <div class="mb-3">
+        <label for="telefone" class="form-label">Telefone</label>
+        <input type="tel" class="form-control" id="telefone" placeholder="(xx) xxxxx-xxxx">
+      </div>
 
-              <div class="mb-3">
-                <label for="tipo" class="form-label">Selecione</label>
-                <select class="form-select" id="tipo">
-                  <option selected disabled>Escolha uma opção</option>
-                  <option value="agricultor">Agricultor</option>
-                  <option value="comunidade">Comunidade</option>
-                </select>
-              </div>
+      <div class="mb-3">
+        <label for="tipo" class="form-label">Selecione</label>
+        <select class="form-select" id="tipo">
+          <option selected disabled>Escolha uma opção</option>
+          <option value="agricultor">Agricultor</option>
+          <option value="comunidade">Comunidade</option>
+        </select>
+      </div>
 
-              <div class="mb-3">
-                <label for="mensagem" class="form-label">Mensagem</label>
-                <textarea class="form-control" id="mensagem" rows="4" placeholder="Digite sua mensagem..."></textarea>
-              </div>
+      <div class="mb-3">
+        <label for="mensagem" class="form-label">Mensagem</label>
+        <textarea class="form-control" id="mensagem" rows="4" maxlength="500" placeholder="Digite sua mensagem (máx. 500 caracteres)" required></textarea>
+        <div class="invalid-feedback">A mensagem é obrigatória e deve ter no máximo 500 caracteres.</div>
+      </div>
 
-              <button type="button" class="btn btn-success w-100">Enviar</button>
-            </form>
-          </div>
-        </div>
+      <!-- Mensagem de sucesso -->
+      <div id="mensagemSucesso" class="alert alert-success text-center py-2 d-none">
+        Mensagem enviada com sucesso!
+      </div>
 
+      <button type="submit" class="btn btn-success w-100">Enviar</button>
+    </form>
+  </div>
+</div>
+
+<!-- Importa o JavaScript -->
+<script src="/agroviva-web/JS/fale.js"></script>
       </div>
     </div>
   </section>
