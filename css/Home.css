@@ -183,7 +183,7 @@ bottom: 20px !important; }
 }
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);  
 }
 
 .card__icon {
@@ -225,6 +225,7 @@ bottom: 20px !important; }
 }
 .card__link:hover {
   border-color: #c9d5df;
+  background-color: #ecf7f1;
 }
 
 /* Telas menores que 768px */
