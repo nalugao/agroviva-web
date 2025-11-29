@@ -11,13 +11,13 @@
 }
 
 *{box-sizing:border-box}
-html,body{height:100%}
+
+html,body
 body{
   margin:0;
   color:var(--text);
   background:var(--bg);
   line-height:1.55;
-
 }
 
 .uwy.userway_p1 .userway_buttons_wrapper { top: auto !important;
@@ -195,6 +195,8 @@ bottom: 20px !important; }
   background: #ecf7f1;
   border: 1px solid #d9eee2;
 }
+
+
 
 .card h3 {
   margin: 10px 0 6px;
