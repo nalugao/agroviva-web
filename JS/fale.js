@@ -1,4 +1,3 @@
-// fale.js — versão robusta
 (function () {
     'use strict';
 
@@ -23,8 +22,9 @@
         nome: document.getElementById('nome'),
         email: document.getElementById('email'),
         telefone: document.getElementById('telefone'),
-        tipo: document.getElementById('tipo'),
-        mensagem: document.getElementById('mensagem')
+        contato: document.getElementById('contato'),
+        mensagem: document.getElementById('mensagem'),
+        tipo: document.getElementById('tipo')
     };
 
     // checa existência dos campos e loga se faltar algo
@@ -82,6 +82,17 @@
             primeiroInvalido = primeiroInvalido || campos.tipo;
         } else {
             campos.tipo.classList.remove('is-invalid');
+        }
+    }
+
+    if (campos.contato) {
+        const v = campos.contato.value;
+        if (!v || v === '' || campos.contato.selectedIndex === 0) {
+            campos.contato.classList.add('is-invalid');
+            valido = false;
+            primeiroInvalido = primeiroInvalido || campos.contato;
+        } else {
+            campos.contato.classList.remove('is-invalid');
         }
     }
 

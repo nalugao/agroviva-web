@@ -3,14 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fale Conosco</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="shortcut icon" href="/agroviva-web/img/logo.png" type="image/x-icon">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
 <link rel="stylesheet" href="css/fale.css">
-<script src="https://cdn.userway.org/widget.js" data-account="9AycmX4hek"></script>
+<title>Fale Conosco</title>
 </head>
 <body>
+
+  <style>
+  /* Impede UserWay de interferir dentro do FAQ */
+  #faqArea.uw-ignore *,
+  #faqArea *,
+  .uw-ignore * {
+      pointer-events: auto !important;
+  }
+</style>
 
 <main>
     <!-- Topbar -->
@@ -52,125 +63,146 @@
     <div class="container py-5">
     <div class="row align-items-center">
 
-        <!-- Coluna esquerda: FAQ -->
-        <div class="col-md-6 fale">
-          <h1 class="fw-bold text-white mb-4 titulo">Fale Conosco</h1>
-          <p class="text-white mb-5 subtitulo">Com AgroViva, queremos transformar esse cenário!</p>
-          <h5 class="text-white mb-3">FAQ - Perguntas Frequentes</h5>
+<div class="container py-5">
 
-          <div class="accordion" id="faqAccordion">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="faq1">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#resposta1">
-                  Sou da comunidade, como vou receber as informações de ofertas?
-                </button>
-              </h2>
-              <div id="resposta1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                  As informações de ofertas serão enviadas diretamente no painel de usuário e por e-mail.
-                </div>
+  <div class="row align-items-start">
+
+    <!-- COLUNA ESQUERDA: FAQ -->
+    <div class="col-md-6 fale">
+      <h1 class="fw-bold mb-4 titulo">Fale Conosco</h1>
+      <p class="mb-5 subtitulo">Com AgroViva, queremos transformar esse cenário!</p>
+      <h5 class="mb-3">FAQ - Perguntas Frequentes</h5>
+
+      <div id="faqArea" class="uw-ignore">
+        <div class="accordion" id="faqAccordion">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#resposta1">
+                Sou da comunidade, como vou receber as informações de ofertas?
+              </button>
+            </h2>
+            <div id="resposta1" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                As informações de ofertas serão enviadas diretamente no e-mail e WhatsApp.
               </div>
             </div>
+          </div>
 
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="faq2">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#resposta2">
-                  Sou produtor, como vou receber as informações de demandas?
-                </button>
-              </h2>
-              <div id="resposta2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                  Você receberá as informações por meio do portal AgroViva e notificações por e-mail.
-                </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#resposta2">
+                Sou produtor, como vou receber as informações de demandas?
+              </button>
+            </h2>
+            <div id="resposta2" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Você receberá as informações por meio do e-mail e WhatsApp.
               </div>
             </div>
+          </div>
 
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="faq3">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#resposta3">
-                  Como faço para me cadastrar?
-                </button>
-              </h2>
-              <div id="resposta3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                  Clique no botão “Cadastrar” no topo da página e siga o passo a passo simples.
-                </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#resposta3">
+                Como faço para me cadastrar?
+              </button>
+            </h2>
+            <div id="resposta3" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Preencha o formulário e selecione a opção “Quero me cadastrar”.
               </div>
             </div>
+          </div>
 
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="faq4">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#resposta4">
-                  Qual o principal propósito da AgroViva?
-                </button>
-              </h2>
-              <div id="resposta4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                  Conectar produtores e comunidades para fortalecer o consumo sustentável.
-                </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#resposta4">
+                Qual o principal propósito da AgroViva?
+              </button>
+            </h2>
+            <div id="resposta4" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Conectar produtores e comunidades para fortalecer o consumo sustentável.
               </div>
             </div>
+          </div>
 
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="faq5">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#resposta5">
-                  A AgroViva certifica seus produtores? Quais são os critérios?
-                </button>
-              </h2>
-              <div id="resposta5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                  Sim, os produtores são certificados conforme boas práticas agrícolas e sustentabilidade.
-                </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq5">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#resposta5">
+                A AgroViva certifica seus produtores? Quais são os critérios?
+              </button>
+            </h2>
+            <div id="resposta5" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                A AgroViva realiza a certificação dos produtores com base em critérios de boas práticas 
+                agrícolas,responsabilidade ambiental e qualidade dos produtos. O objetivo é garantir
+                que toda a produção seja segura, sustentável e alinhada aos valores da plataforma.
               </div>
             </div>
           </div>
         </div>
-
-        <!-- Formulário figurativo -->
-<div class="col-md-6 mt-5 mt-md-0 form">
-  <div class="card shadow p-4">
-    <h4 class="mb-4 text-success fw-bold">Entre em contato</h4>
-
-    <form id="contatoForm" novalidate>
-      <div class="mb-3">
-        <label for="nome" class="form-label">Nome Completo</label>
-        <input type="text" class="form-control" id="nome" placeholder="Seu nome completo" required>
-        <div class="invalid-feedback">Digite seu nome completo (nome e sobrenome com pelo menos 2 letras cada).</div>
       </div>
+    </div>
 
-      <div class="mb-3">
-        <label for="email" class="form-label">E-mail</label>
-        <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com" required>
-        <div class="invalid-feedback">Digite um e-mail válido (exemplo@dominio.com).</div>
+    <!-- COLUNA DIREITA: FORMULÁRIO -->
+    <div class="col-md-6 mt-5 mt-md-0 form">
+      <div class="card shadow p-4">
+        <h4 class="mb-4 fw-bold">Entre em contato conosco</h4>
+
+        <form id="contatoForm" novalidate>
+
+          <div class="mb-3">
+            <label class="form-label">Nome Completo</label>
+            <input type="text" class="form-control" id="nome" placeholder="Seu nome completo" required>
+            <div class="invalid-feedback">Digite seu nome completo.</div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com" required>
+            <div class="invalid-feedback">Digite um e-mail válido.</div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Telefone</label>
+            <input type="tel" class="form-control" id="telefone" placeholder="(xx) xxxxx-xxxx">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Você é:</label>
+            <select class="form-select" id="tipo">
+              <option disabled selected>Escolha uma opção</option>
+              <option value="agricultor">Agricultor</option>
+              <option value="comunidade">Comunidade</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Selecione</label>
+            <select class="form-select" id="contato">
+              <option disabled selected>Escolha uma opção</option>
+              <option value="cadastro">Quero me cadastrar</option>
+              <option value="duvida">Quero tirar uma dúvida</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Mensagem</label>
+            <textarea class="form-control" id="mensagem" rows="4" maxlength="500" placeholder="Digite sua mensagem" required></textarea>
+            <div class="invalid-feedback">Mensagem obrigatória (máx. 500 caracteres).</div>
+          </div>
+
+          <div id="mensagemSucesso" class="alert alert-success text-center py-2 d-none">
+            Mensagem enviada com sucesso!
+          </div>
+
+          <button type="submit" class="btn btn-success w-100">Enviar</button>
+        </form>
       </div>
+    </div>
 
-      <div class="mb-3">
-        <label for="telefone" class="form-label">Telefone</label>
-        <input type="tel" class="form-control" id="telefone" placeholder="(xx) xxxxx-xxxx">
-      </div>
-
-      <div class="mb-3">
-        <label for="tipo" class="form-label">Selecione</label>
-        <select class="form-select" id="tipo">
-          <option selected disabled>Escolha uma opção</option>
-          <option value="agricultor">Agricultor</option>
-          <option value="comunidade">Comunidade</option>
-        </select>
-      </div>
-
-      <div class="mb-3">
-        <label for="mensagem" class="form-label">Mensagem</label>
-        <textarea class="form-control" id="mensagem" rows="4" maxlength="500" placeholder="Digite sua mensagem (máx. 500 caracteres)" required></textarea>
-        <div class="invalid-feedback">A mensagem é obrigatória e deve ter no máximo 500 caracteres.</div>
-      </div>
-
-      <!-- Mensagem de sucesso -->
-      <div id="mensagemSucesso" class="alert alert-success text-center py-2 d-none">
-        Mensagem enviada com sucesso!
-      </div>
-
-      <button type="submit" class="btn btn-success w-100">Enviar</button>
-    </form>
   </div>
 </div>
 
@@ -239,11 +271,6 @@
     </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <!--plugin VLibras para garantir acessibilidade-->
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
@@ -255,5 +282,7 @@
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
+    <script src="https://cdn.userway.org/widget.js" data-account="9AycmX4hek"></script>
+    <script src="/agroviva-web/JS/faq.js"></script>
 </body>
 </html>
