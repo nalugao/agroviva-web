@@ -1,6 +1,6 @@
 /* Base */
 :root{
-  --bg:linear-gradient(180deg, #ffffff 0%, #f1f8e9 100%);
+  --bg:linear-gradient(180deg, #ffffff 0%, #f1f8e9 100%); 
   --text:#101418;
   --muted:#5b6876;
   --primary:#1B7F4A;        
@@ -17,6 +17,7 @@ body{
   color:var(--text);
   background:var(--bg);
   line-height:1.55;
+
 }
 
 .uwy.userway_p1 .userway_buttons_wrapper { top: auto !important;
