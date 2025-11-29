@@ -1,6 +1,5 @@
 /* Base */
 :root{
-    font-family: 'Quicksand', 'Inter', 'Roboto', sans-serif;
   --bg:linear-gradient(180deg, #ffffff 0%, #f1f8e9 100%);
   --text:#101418;
   --muted:#5b6876;
@@ -15,7 +14,6 @@
 html,body{height:100%}
 body{
   margin:0;
-  font-family: 'Quicksand', 'Inter', 'Roboto', sans-serif;
   color:var(--text);
   background:var(--bg);
   line-height:1.55;

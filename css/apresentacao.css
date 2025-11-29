@@ -7,7 +7,6 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   min-height: 100vh;
 }
 
@@ -472,7 +471,6 @@ body {
 
 .p_iphone {
   position: relative;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   top: 10%;
   width: 150px;
   left: 5%;
