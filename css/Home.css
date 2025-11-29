@@ -18,12 +18,10 @@ body{
   color:var(--text);
   background:var(--bg);
   line-height:1.55;
+    .uwy.userway_p1 .userway_buttons_wrapper { top: auto !important;
+bottom: 20px !important; }
 }
 
-#userwayAccessibilityIcon {
-  margin-top: 250px !important;
-  z-index: 9999 !important;
-}
 
 /* Helpers */
 .container{
