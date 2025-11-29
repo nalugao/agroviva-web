@@ -261,6 +261,16 @@ bottom: 20px !important; }
   }
 }
 
+#video h2 {
+  font-size: 2.3rem;
+}
+
+#video .ratio {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
 /* RODAPÉ */
 body {
   margin: 0;
