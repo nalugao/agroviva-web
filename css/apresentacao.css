@@ -11,9 +11,9 @@ body {
   min-height: 100vh;
 }
 
-#userwayAccessibilityIcon {
-  margin-top: 250px !important; /* ajusta a posição vertical do ícone */
-  z-index: 9999 !important;   /* garante que o botão fique acima de outros elementos */
+.uwy.userway_p1.userway_buttons_wrapper {
+  top: auto !important;
+  bottom: 20px !important;
 }
 
 .topbar {
@@ -124,7 +124,7 @@ body {
 }
 
 .header__h1 {
-  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-size: clamp(28px, 4vw + 8px, 50px);
   font-weight: 700;
   margin-bottom: 1rem;
   line-height: 1.2;
@@ -144,6 +144,7 @@ body {
 }
 
 .header__h2 {
+  font-size: clamp(14px, 1.4vw + 8px, 27px);
   font-weight: 500;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), 0 0 1em black, 0 0 0.5em black;
 }
@@ -200,12 +201,8 @@ body {
 }
 
 .topics h1 {
-  font-size: clamp(2rem, 3vw, 2.8rem);
-  background: linear-gradient(135deg, #1b5e20, #43a047, #66bb6a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  font-weight: 800;
+  font-size: clamp(28px, 4vw + 8px, 50px);
+   font-weight: 800;
   margin-bottom: 1.5rem;
   text-align: center;
   letter-spacing: -0.5px;
