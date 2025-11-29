@@ -41,7 +41,6 @@ background: linear-gradient(180deg, #ffffff 0%, #f1f8e9 100%);
   width: 34px;
   height: 34px;
   border-radius: 8px;
-  background: #e9f6ef;
 }
 
 .navbar-brand span {
@@ -133,6 +132,10 @@ margin: 0;
   margin-top: 145px !important; 
     background: linear-gradient(180deg, #ffffff 0%, #f1f8e9 100%) !important;
 }
+
+/* .card{
+  background-color: #f1f8e9;
+} */
 
 /* Animação suave para mensagem de sucesso */
 .fade-in {
