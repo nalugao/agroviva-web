@@ -82,6 +82,14 @@ body {
   min-height: 100vh;
 }
 
+.titulo{
+font-size: clamp(28px, 4vw + 8px, 50px);
+}
+
+.subtitulo{
+  font-size: clamp(14px, 1.4vw + 8px, 27px);
+}
+
 .accordion-item {
   background: white;
   border-radius: 10px;
@@ -198,9 +206,12 @@ footer .bi:hover {
   transition: 0.3s ease;
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) { 
+@media (min-width: 768px) and (max-width: 991.98px) and (max-width: 320px) { 
     .footer-logo {
     max-width: 180px;
     height: auto;
+  }
+  .titulo{
+    font-size: 1rem !important;
   }
 }
