@@ -89,6 +89,12 @@ body {
   background: linear-gradient(180deg, #ffffff 0%, #f1f8e9 100%);
 }
 
+@media (max-width: 480px) {
+  .main__content {
+    padding: 1rem 0.5rem;
+  }
+}
+
 .header {
   background-image: url("/img/homem_campo.png");
   background-size: cover;
@@ -101,6 +107,20 @@ body {
   overflow: hidden;
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 2rem 1.5rem;
+    min-height: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 1.5rem 1rem;
+    min-height: 220px;
+  }
 }
 
 .header::before {
@@ -154,7 +174,7 @@ body {
   width: 100%;
 }
 
-.ul {
+.topicos_propostas {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -169,15 +189,23 @@ body {
   gap: 16px;
   border-radius: 20px;
   padding: 1.5rem 1.75rem;
-  background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%);
+  background: #f1f8e9;
   border: 2px solid transparent;
   background-clip: padding-box;
   position: relative;
   width: 100%;
   font-size: clamp(1rem, 2vw, 1.15rem);
   font-weight: 600;
-  color: #2e7d32;
+  color: #000000;
   overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 1rem 1.25rem;
+    gap: 12px;
+    font-size: 0.95rem;
+  }
 }
 
 .topics li {
@@ -193,16 +221,33 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 70px;
   margin-top: 10%;
   padding: 2.5rem;
   border-radius: 30px;
   position: relative;
 }
 
+
+@media (max-width: 768px) {
+  .topics {
+    margin-top: 5%;
+    padding: 1.5rem;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .topics {
+    margin-top: 3%;
+    padding: 1rem;
+    gap: 12px;
+  }
+}
+
 .topics h1 {
   font-size: clamp(28px, 4vw + 8px, 50px);
-   font-weight: 800;
+  font-weight: 800;
   margin-bottom: 1.5rem;
   text-align: center;
   letter-spacing: -0.5px;
@@ -219,7 +264,7 @@ body {
   margin-top: 2rem;
 }
 
-.cadastro-button {
+.fale-button {
   background: linear-gradient(135deg, #2e7d32 0%, #43a047 50%, #4caf50 100%);
   background-size: 200% 200%;
   animation: gradient-shift 3s ease infinite;
@@ -237,6 +282,14 @@ body {
   color: white;
   position: relative;
   overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .cadastro-button {
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+  }
 }
 
 .cadastro-button::before {
@@ -276,14 +329,52 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
+  padding: 2rem 1rem 1rem 1rem;
+  min-height: auto;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .iphone_section {
+    padding: 1.5rem 1rem 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .iphone_section {
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    margin-bottom: 0.5rem;
+    height: 450px;
+  }
 }
 
 .iphone {
   position: relative;
-  width: 100%;
-  max-width: 330px; /* tamanho real máximo */
+  width: 330px;
+  height: 700px;
   margin: 0 auto;
   z-index: 1;
+  transform-origin: center center;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .iphone {
+    transform: scale(0.85);
+  }
+}
+
+@media (max-width: 480px) {
+  .iphone {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 360px) {
+  .iphone {
+    transform: scale(0.6);
+  }
 }
 
 .iphone_border {
@@ -310,6 +401,7 @@ body {
   position: relative;
   background: #f1f8e9;
 }
+
 
 .iphone_notch {
   position: absolute;
