@@ -11,11 +11,8 @@ body {
   margin: 0;
   color: #333;
   overflow-x: hidden;
-}
-
-#userwayAccessibilityIcon {
-  margin-top: 250px !important; /* ajusta a posição vertical do ícone */
-  z-index: 9999 !important;   /* garante que o botão fique acima de outros elementos */
+  .uwy.userway_p1 .userway_buttons_wrapper { top: auto !important;
+bottom: 20px !important; }
 }
 
 .topbar {
