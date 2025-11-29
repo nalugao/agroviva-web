@@ -90,7 +90,7 @@ body {
 }
 
 .header {
-  background-image: url("/agroviva-web/img/homem_campo.png");
+  background-image: url("/img/homem_campo.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
