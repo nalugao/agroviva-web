@@ -5,9 +5,27 @@ background: linear-gradient(180deg, #ffffff 0%, #f1f8e9 100%);
   color: #333;
 }
 
-#userwayAccessibilityIcon {
-  margin-top: 250px !important; /* ajusta a posição vertical do ícone */
-  z-index: 9999 !important;   /* garante que o botão fique acima de outros elementos */
+#userwayAccessibilityIcon,
+.userway_buttons_wrapper,
+.userway-widget,
+.userway-accessibility-widget {
+  position: fixed !important;
+  right: 10px !important;
+  bottom: 20px !important;
+  top: auto !important;
+  left: auto !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+}
+
+@media (max-width: 768px) {
+  #userwayAccessibilityIcon,
+  .userway_buttons_wrapper,
+  .userway-widget,
+  .userway-accessibility-widget {
+    right: 10px !important;
+    bottom: 10px !important;
+  }
 }
 
 .topbar {
