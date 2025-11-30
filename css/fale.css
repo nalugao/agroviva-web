@@ -89,6 +89,7 @@ text-align: center;
 }
 
 .subtitulo{
+  text-align: center;
   font-size: clamp(14px, 1.4vw + 8px, 26px);
 }
 
