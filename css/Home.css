@@ -12,11 +12,17 @@
 
 *{box-sizing:border-box}
 
-html,body
-body{
+html,body{
   margin:0;
+  padding:0;
+  width:100%;
+  min-height:100%;
+}
+
+body{
   color:var(--text);
   background:var(--bg);
+  background-attachment:fixed;
   line-height:1.55;
 }
 
