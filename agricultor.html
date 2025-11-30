@@ -1,187 +1,283 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Agricultor</title>
-  <link rel="shortcut icon" href="/img/Logo_AgroViva1.PNG" type="image/x-icon">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <script src="https://cdn.userway.org/widget.js" data-account="9AycmX4hek"></script>
-  <link rel="stylesheet" href="css/agricultor.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-<header class="topbar">
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="Home.html">
-        <img src="img/Logo_AgroViva1.PNG" alt="Logo AgroViva Web" class="brand__logo me-2">
-        <span class="fw-bold text-success">AgroViva Web</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav align-items-lg-center gap-lg-3">
-          <li class="nav-item">
-            <a class="nav-link" href="/Home.html">Início</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/Apresentacao.html">Impacto Social</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-success fw-bold" href="/agricultor.html">Agricultor</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/Comunidade.html">Comunidade</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/FaleConosco.html">Fale Conosco</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
-
-<main id="conteudo">
-  <section class="agri py-5">
-    <div class="container">
-      <div class="row align-items-center gy-5">
-        
-        <!-- Coluna Esquerda -->
-        <div class="col-lg-6 text-center text-lg-start">
-          <img src="/img/548890 1.png" alt="Agricultores no campo" class="img-fluid agri-img mb-4">
-          
-          <div class="tag d-flex align-items-center justify-content-center justify-content-lg-start gap-2 mb-3">
-            <img src="/img/globo.png" alt="Ícone globo" class="tag-icon">
-            <span class="text-white fw-semibold">Agricultor mais conectado conectado com o cliente</span>
-          </div>
-          <p class="subtitle">
-            Do clima à feira: tudo que o agricultor precisa para crescer
-          </p>
-        </div>
-
-        <!-- Coluna Direita -->
-        <div class="col-lg-6">
-          <div class="agri-right bg-success text-white p-4 rounded-4">
-            <div class="text-center mb-4">
-              <h1 class="fw-bold fs-4">O que o agricultor ganha ao se cadastrar</h1>
-            </div>
-
-            <!-- Cards -->
-            <div class="agri-card d-flex align-items-start gap-3 mb-3">
-              <img src="/img/nuvem.png" alt="Ícone clima" width="48">
-              <div>
-                <h5 class="fw-semibold">Acesso ao clima local</h5>
-                <p class="mb-0">Acompanhe alertas climáticos automaticamente.</p>
-              </div>
-            </div>
-
-            <div class="agri-card d-flex align-items-start gap-3 mb-3">
-              <img src="/img/pc.png" alt="Ícone cadastro" width="48">
-              <div>
-                <h5 class="fw-semibold">Cadastro de produtos fácil</h5>
-                <p class="mb-0">Em um clique ou por áudio, mesmo para quem tem pouca alfabetização.</p>
-              </div>
-            </div>
-
-            <div class="agri-card d-flex align-items-start gap-3 mb-3">
-              <img src="/img/carrinho.png" alt="Ícone vendas" width="48">
-              <div>
-                <h5 class="fw-semibold">Mais oportunidades de venda</h5>
-                <p class="mb-0">Venda excedentes para feiras e comunidades locais.</p>
-              </div>
-            </div>
-
-            <div class="agri-card d-flex align-items-start gap-3">
-              <img src="/img/planta.png" alt="Ícone plantio" width="48">
-              <div>
-                <h5 class="fw-semibold">Orientações de plantio</h5>
-                <p class="mb-0">Boas práticas simples para melhorar o cultivo e produtividade.</p>
-              </div>
-            </div>
-
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agricultor</title>
+    <link
+      rel="shortcut icon"
+      href="/img/Logo_AgroViva1.PNG"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://cdn.userway.org/widget.js"
+      data-account="9AycmX4hek"
+    ></script>
+    <link rel="stylesheet" href="css/agricultor.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="topbar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="Home.html">
+            <img
+              src="img/Logo_AgroViva1.PNG"
+              alt="Logo AgroViva Web"
+              class="brand__logo me-2"
+            />
+            <span class="fw-bold text-success">AgroViva Web</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Alternar navegação"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav align-items-lg-center gap-lg-3">
+              <li class="nav-item">
+                <a class="nav-link" href="/Home.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Apresentacao.html">Impacto Social</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-success fw-bold"
+                  href="/agricultor.html"
+                  >Agricultor</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Comunidade.html">Comunidade</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/FaleConosco.html">Fale Conosco</a>
+              </li>
+            </ul>
           </div>
         </div>
+      </nav>
+    </header>
 
-      </div>
-    </div>
-  </section>
-</main>
+    <main id="conteudo">
+      <section class="agri py-5">
+        <div class="container">
+          <h1 class="titulo_h1">
+            Agricultor mais conectado com o cliente
+          </h1>
 
-  <footer class="footer-bg text-white mt-auto py-5">
-    <section class="container text-center mb-4">
-      <h3 class="fw-bold">Fique por dentro das nossas redes!</h3>
-      <div class="d-flex justify-content-center gap-4 mt-3 fs-3">
-        <a href="https://x.com/" class="text-white"><i class="bi bi-twitter-x"></i></a>
-        <a href="https://www.instagram.com/" class="text-white"><i class="bi bi-instagram"></i></a>
-        <a href="https://pt-br.facebook.com/" class="text-white"><i class="bi bi-facebook"></i></a>
-      </div>
-      <hr class="my-4 mx-auto opacity-75" style="width:60%;">
-    </section>
+          <div class="row align-items-center gy-5">
+            <!-- Coluna Esquerda -->
+            <div class="col-lg-6 text-center text-lg-start">
+              <img
+                src="/img/548890 1.png"
+                alt="Agricultores no campo"
+                class="img-fluid agri-img mb-4"
+              />
 
-    <section class="container">
-      <div class="row gy-4 text-center text-md-start">
-        <div class="col-md-3">
-          <img src="/img/logo.png" alt="Logotipo AgroViva Web" class="footer-logo mb-2">
+              <div
+                class="tag d-flex align-items-center justify-content-center justify-content-lg-start gap-2 mb-3"
+              >
+                <img src="/img/globo.png" alt="Ícone globo" class="tag-icon" />
+                <span class="text-white fw-semibold"
+                  >Agricultor mais conectado com o cliente</span
+                >
+              </div>
+              <p class="subtitle">
+                Do clima à feira: tudo que o agricultor precisa para crescer!
+              </p>
+            </div>
+
+            <!-- Coluna Direita -->
+            <div class="col-lg-6">
+              <div class="agri-right bg-success text-white p-4 rounded-4">
+                <div class="text-center mb-4">
+                  <h1 class="fw-bold fs-4">
+                    Benefícios ao agricultor parceiro:
+                  </h1>
+                </div>
+
+                <!-- Cards -->
+                <div class="agri-card d-flex align-items-start gap-3 mb-3">
+                  <img src="/img/nuvem.png" alt="Ícone clima" width="48" />
+                  <div>
+                    <h5 class="fw-semibold">Acesso ao clima local</h5>
+                    <p class="mb-0">
+                      Acompanhe alertas climáticos automaticamente.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="agri-card d-flex align-items-start gap-3 mb-3">
+                  <img src="/img/pc.png" alt="Ícone cadastro" width="48" />
+                  <div>
+                    <h5 class="fw-semibold">Cadastro de produtos fácil</h5>
+                    <p class="mb-0">
+                      Em um clique ou por áudio, mesmo para quem tem pouca
+                      alfabetização.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="agri-card d-flex align-items-start gap-3 mb-3">
+                  <img src="/img/carrinho.png" alt="Ícone vendas" width="48" />
+                  <div>
+                    <h5 class="fw-semibold">Mais oportunidades de venda</h5>
+                    <p class="mb-0">
+                      Venda excedentes para feiras e comunidades locais.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="agri-card d-flex align-items-start gap-3">
+                  <img src="/img/planta.png" alt="Ícone plantio" width="48" />
+                  <div>
+                    <h5 class="fw-semibold">Orientações de plantio</h5>
+                    <p class="mb-0">
+                      Boas práticas simples para melhorar o cultivo e
+                      produtividade.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
+    </main>
 
-        <nav class="col-md-3">
-          <h3 class="h5 fw-bold">Navegação</h3>
-          <ul class="list-unstyled m-0">
-            <li><a href="/Home.html" class="text-white text-decoration-none">Home</a></li>
-            <li><a href="/Apresentacao.html" class="text-white text-decoration-none">Impacto Socialo</a></li>
-            <li><a href="/Comunidade.html" class="text-white text-decoration-none">Comunidade</a></li>
-            <li><a href="/agricultor.html" class="text-white text-decoration-none">Agricultor</a></li>
-            <li><a href="/FaleConosco.html" class="text-white text-decoration-none">Fale conosco</a></li>
-          </ul>
-        </nav>
+    <footer class="footer-bg text-white mt-auto py-5">
+      <section class="container text-center mb-4">
+        <h3 class="fw-bold">Fique por dentro das nossas redes!</h3>
+        <div class="d-flex justify-content-center gap-4 mt-3 fs-3">
+          <a href="https://x.com/" class="text-white"
+            ><i class="bi bi-twitter-x"></i
+          ></a>
+          <a href="https://www.instagram.com/" class="text-white"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a href="https://pt-br.facebook.com/" class="text-white"
+            ><i class="bi bi-facebook"></i
+          ></a>
+        </div>
+        <hr class="my-4 mx-auto opacity-75" style="width: 60%" />
+      </section>
 
-        <section class="col-md-3">
-          <h3 class="h5 fw-bold">Serviços</h3>
-          <ul class="list-unstyled m-0">
+      <section class="container">
+        <div class="row gy-4 text-center text-md-start">
+          <div class="col-md-3">
+            <img
+              src="/img/logo.png"
+              alt="Logotipo AgroViva Web"
+              class="footer-logo mb-2"
+            />
+          </div>
+
+          <nav class="col-md-3">
+            <h3 class="h5 fw-bold">Navegação</h3>
+            <ul class="list-unstyled m-0">
+              <li>
+                <a href="/Home.html" class="text-white text-decoration-none"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Apresentacao.html"
+                  class="text-white text-decoration-none"
+                  >Impacto Socialo</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Comunidade.html"
+                  class="text-white text-decoration-none"
+                  >Comunidade</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/agricultor.html"
+                  class="text-white text-decoration-none"
+                  >Agricultor</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/FaleConosco.html"
+                  class="text-white text-decoration-none"
+                  >Fale conosco</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <section class="col-md-3">
+            <h3 class="h5 fw-bold">Serviços</h3>
+            <ul class="list-unstyled m-0">
               <li>Agricultores:</li>
               <li>Alertas Climáticos (INMET)</li>
               <li>Venda e Oferta Local</li>
               <li>Comunidade:</li>
               <li>Mapa de Distribuição de Alimentos</li>
               <li>Acesso a Alimentos Frescos</li>
-          </ul>
-        </section>
+            </ul>
+          </section>
 
-        <section class="col-md-3">
-          <h3 class="h5 fw-bold">Contato</h3>
-          <ul class="list-unstyled m-0">
+          <section class="col-md-3">
+            <h3 class="h5 fw-bold">Contato</h3>
+            <ul class="list-unstyled m-0">
               <li>AgroViva@gmail.com</li>
               <li>+55 11 94733-4726</li>
-          </ul>
-        </section>
-      </div>
-
-      <div class="border-top mt-4 pt-3 text-center small opacity-75">
-        © 2025 <strong>AgroVivaWeb</strong>. Todos os direitos reservados. |
-        <a href="#" class="text-white text-decoration-none">Política de Privacidade</a> |
-        <a href="#" class="text-white text-decoration-none">Termos de Uso</a>
-      </div>
-    </section>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-     <!--plugin VLibras para garantir acessibilidade-->
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
+            </ul>
+          </section>
         </div>
+
+        <div class="border-top mt-4 pt-3 text-center small opacity-75">
+          © 2025 <strong>AgroVivaWeb</strong>. Todos os direitos reservados. |
+          <a href="#" class="text-white text-decoration-none"
+            >Política de Privacidade</a
+          >
+          |
+          <a href="#" class="text-white text-decoration-none">Termos de Uso</a>
+        </div>
+      </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!--plugin VLibras para garantir acessibilidade-->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
     </div>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
     </script>
-</body>
+  </body>
 </html>

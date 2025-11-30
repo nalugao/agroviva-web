@@ -1,12 +1,29 @@
-:root{ --primary:#1B7F4A; }
-  html, body { height: 100%; }
-  body{
-      margin:0; display:flex; flex-direction:column; min-height:100vh;
-      .uwy.userway_p1 .userway_buttons_wrapper { top: auto !important;
-bottom: 20px !important; }
-    }
-    main#conteudo{ flex:1 0 auto; }
+:root {
+  --primary: #1B7F4A;
+}
 
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.uwy.userway_p1 .userway_buttons_wrapper {
+  top: auto !important;
+  bottom: 20px !important;
+}
+
+main#conteudo {
+  flex: 1 0 auto;
+}
+
+/* ========== NAVBAR ========== */
 .topbar {
   position: sticky;
   top: 0;
@@ -58,107 +75,49 @@ bottom: 20px !important; }
   gap: 15px;
 }
 
-/* Ajustes responsivos */
-@media (max-width: 991px) {
-  .navbar-nav {
-    text-align: center;
-    gap: 10px;
-  }
-
-  .navbar-collapse {
-    background: #fff;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  }
-}
-
-    /* Cards simples da seção de benefícios */
-    .card h3{ margin-bottom:.25rem; font-weight:800; }
-    .subtitle{ line-height:1.3; }
-
-    .footer-bg {
-  background: linear-gradient(
-    to right,
-    rgba(196, 196, 196, 1) 0%,
-    rgba(170, 199, 130, 1) 39%,
-    rgba(157, 200, 97, 1) 65%,
-    rgba(144, 201, 64, 1) 100%
-  );
-}
-
-.footer-logo {
-  max-width: 220px;
-  height: auto;  
-  margin-top: -27px; 
-}
-
-footer a:hover {
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
-}
-
-footer .bi {
-  transition: transform 0.2s ease, text-shadow 0.2s ease;
-}
-
-footer .bi:hover {
-  transform: scale(1.2);
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  transition: 0.3s ease;
-}
-
+/* ========== SEÇÃO AGRICULTOR ========== */
 .agri {
   background: linear-gradient(180deg, #ffffff 0%, #f1f8e9 100%);
+  padding: 40px 0;
 }
 
-.agri .agri-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 40px;
-  width: min(1120px, 92vw);
-  margin: 28px auto;
-}
-
-.agri .agri-left {
-  flex: 1 1 360px;
-  min-width: 320px;
-  padding: 20px;
+.titulo_h1 {
   text-align: center;
+  font-size: clamp(28px, 4vw + 8px, 35px);  
+  margin: 20px 50px 70px;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
-.agri .agri-img {
+.agri h1 {
+  text-align: center;
+  font-size: clamp(28px, 4vw + 8px, 35px);  
+  margin: 20px 20px 50px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.agri-img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 25px auto 0;
-  margin-top: 60px;
+  margin: 25px auto 30px;
   width: 100%;
-  max-width: 700px;
-  height: 350px;
-  object-fit: cover;
   border-radius: 20px;
-  z-index: 0;
+  object-fit: cover;
 }
 
 .tag {
   display: inline-flex;
   align-items: center;
-  margin-top: 20px !important;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px auto;
   border-radius: 20px;
   border: 1px solid #D1D1D1;
-  padding: 6px 12px;
+  padding: 8px 16px;
   background: transparent;
-  color: black;
+  color: white;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 600;
   z-index: 2;
   position: relative;
   max-width: fit-content;
@@ -177,141 +136,322 @@ footer .bi:hover {
 }
 
 .tag img {
-  width: 30px;
-  height: 30px;
-  margin-right: 6px;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
   filter: brightness(0) invert(1);
 }
 
-.agri .subtitle {
-  margin-top: 18px;
-  /* Aumentado para desktop */
-  font-size: 1.5rem; 
+.subtitle {
+  margin-top: 20px;
+  font-size: 1.25rem;
   color: #000;
-  /* O Bootstrap/text-align:center do pai vai gerenciar o alinhamento */
-  margin-left: auto; 
-  margin-right: auto;
-  /* Define uma largura ideal para desktop */
-  max-width: 700px; 
-  white-space: nowrap; 
-  overflow: hidden;    
-  text-overflow: ellipsis;
+  line-height: 1.4;
+  max-width: 100%;
+  font-weight: 700;
+  text-align: center;
 }
 
-.agri .agri-right {
-  flex: 1 1 440px;
-  min-width: 320px;
+.agri-right {
   background: #e8f5e9 !important;
   color: black !important;
-  padding: 40px 30px 45px;
-  border-radius: 25px;
-  position: relative;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
 }
 
-.agri .header-right-content {
-  display: flex;
-  align-items: center; 
-  justify-content: center; 
-  gap: 10px; 
-  margin-bottom: 28px; 
-}
-
-.agri h1 {
-  
-  margin: 0; 
-  font-size: 1.4rem;
+.agri-right h1 {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
   font-weight: 700;
 }
 
-.agri h2 { 
-  margin: 0; 
-}
-
-.agri h2 {
-  text-align: center;
-  margin: 80px 0 28px 0;
-  font-size: 1.4rem;
-  font-weight: 700;
-}
-
-.agri .agri-card {
+.agri-card {
   display: flex;
   align-items: flex-start;
   background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
   color: white;
-  padding: 18px 20px;
-  border-radius: 14px;
-  margin-bottom: 20px;
-  gap: 15px;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  gap: 12px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.agri .agri-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.agri-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.agri .agri-card img {
-  width: 38px;
-  height: 38px;
+.agri-card img {
+  width: 40px;
+  height: 40px;
   object-fit: contain;
   flex-shrink: 0;
   filter: brightness(0) invert(1);
 }
 
-.agri .agri-card h3 {
+.agri-card h5 {
   font-size: 1rem;
   margin: 0 0 6px 0;
   font-weight: 700;
 }
 
-.agri .agri-card p {
+.agri-card p {
   font-size: 0.9rem;
-  line-height: 1.35;
+  line-height: 1.4;
   margin: 0;
 }
 
-@media (max-width: 992px) {
-  .agri .agri-wrap {
-    flex-direction: column;
-    align-items: center;
+/* ========== FOOTER ========== */
+.footer-bg {
+  background: linear-gradient(
+    to right,
+    rgba(196, 196, 196, 1) 0%,
+    rgba(170, 199, 130, 1) 39%,
+    rgba(157, 200, 97, 1) 65%,
+    rgba(144, 201, 64, 1) 100%
+  );
+  margin-top: auto;
+}
+
+.footer-logo {
+  max-width: 180px;
+  height: auto;
+  margin-top: -20px;
+}
+
+footer a:hover {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+footer .bi {
+  transition: transform 0.2s ease, text-shadow 0.2s ease;
+}
+
+footer .bi:hover {
+  transform: scale(1.2);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Tablets e dispositivos médios */
+@media (max-width: 991px) {
+  .navbar-nav {
     text-align: center;
+    gap: 10px;
   }
 
-  .agri .agri-right {
-    margin-top: 30px;
-    padding: 30px 20px;
+  .navbar-collapse {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   }
 
-  .agri .agri-img {
-    height: auto;
+  .titulo_h1 {
+    font-size: 2.2rem;
+    margin: 20px 30px 50px;
+  }
+
+  .agri h1 {
+    font-size: 2rem;
+    margin: 20px 15px 40px;
+  }
+
+  .agri-img {
     max-width: 90%;
+    height: auto;
   }
-  /* CORRIGIDO: Garante que o texto se centralize e tenha bom tamanho no mobile */
-  .agri .subtitle {
-    text-align: center; 
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 90%; 
-    font-size: 1.5rem; 
+
+  .subtitle {
+    font-size: 1.15rem;
+    padding: 0 15px;
+  }
+
+  .agri-right {
+    margin-top: 40px;
   }
 }
 
-@media (max-width: 576px) {
-  .agri h2 {
-    font-size: 1.2rem;
-    margin: 60px 0 20px 0;
+/* Smartphones */
+@media (max-width: 768px) {
+  .agri {
+    padding: 30px 0;
   }
 
-  .agri .agri-card {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  .titulo_h1 {
+    font-size: 2rem !important;
+    margin: 15px 20px 40px;
+  }
+
+  .agri h1 {
+    font-size: 1.75rem;
+    margin: 15px 10px 30px;
   }
 
   .tag {
     font-size: 13px;
-    padding: 5px 10px;
+    padding: 6px 12px;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .tag img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    padding: 0 20px;
+    margin-top: 15px;
+  }
+
+  .agri-right {
+    padding: 25px 18px;
+    margin-top: 0px !important;
+  }
+
+  .agri-right h1 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+
+  .agri-card {
+    padding: 14px;
+    gap: 10px;
+  }
+
+  .agri-card img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .footer-logo {
+    max-width: 150px;
+  }
+}
+
+/* Smartphones pequenos */
+@media (max-width: 576px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .titulo_h1 {
+    font-size: 1.6rem;
+    margin: 10px 15px 30px;
+    line-height: 1.3;
+  }
+
+  .agri h1 {
+    font-size: 1.5rem;
+    margin: 10px 10px 25px;
+    line-height: 1.3;
+  }
+
+  .brand__logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar-brand span {
+    font-size: 16px;
+  }
+
+  .agri-img {
+    border-radius: 15px;
+    margin: 20px auto 25px;
+  }
+
+  .tag {
+    font-size: 12px;
+    padding: 6px 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    padding: 0 15px;
+    line-height: 1.5;
+  }
+
+  .agri-right {
+    padding: 20px 15px;
+    border-radius: 15px;
+  }
+
+  .agri-right h1 {
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+  }
+
+  .agri-card {
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+  }
+
+  .agri-card img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .agri-card h5 {
+    font-size: 0.95rem;
+  }
+
+  .agri-card p {
+    font-size: 0.85rem;
+  }
+
+  footer {
+    padding: 30px 0 !important;
+  }
+
+  footer h3 {
+    font-size: 1.1rem;
+  }
+
+  footer .fs-3 {
+    font-size: 1.5rem !important;
+  }
+
+  .footer-logo {
+    max-width: 130px;
+    margin-top: -15px;
+  }
+}
+
+/* Smartphones muito pequenos */
+@media (max-width: 375px) {
+  .titulo_h1 {
+    font-size: 1.4rem;
+    margin: 10px 10px 25px;
+  }
+
+  .agri h1 {
+    font-size: 1.3rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .agri-right h1 {
+    font-size: 1.1rem;
+  }
+
+  .agri-card h5 {
+    font-size: 0.9rem;
+  }
+
+  .agri-card p {
+    font-size: 0.8rem;
   }
 }
